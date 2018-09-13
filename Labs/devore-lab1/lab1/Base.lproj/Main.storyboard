@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="ipad9_7" orientation="landscape">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="Stack View standard spacing" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="lab1" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="2nZ-AS-Rih">
+                                <rect key="frame" x="374.5" y="50" width="275" height="688"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="hello world" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SEd-ri-mpV">
+                                        <rect key="frame" x="0.0" y="0.0" width="275" height="20"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="20" id="ajn-10-qrG"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="helloworld" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Lm6-LG-bOf">
+                                        <rect key="frame" x="0.0" y="28" width="275" height="582"/>
+                                    </imageView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="GX6-8q-p1N">
+                                        <rect key="frame" x="0.0" y="618" width="275" height="70"/>
+                                        <subviews>
+                                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rtP-Cn-6UY">
+                                                <rect key="frame" x="0.0" y="0.0" width="275" height="30"/>
+                                                <state key="normal" title="morning">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="chooseImage:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Nrh-L9-OaM"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UIT-wa-ebd">
+                                                <rect key="frame" x="0.0" y="40" width="275" height="30"/>
+                                                <state key="normal" title="night">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <color key="titleShadowColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="chooseImage:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ywI-vU-ZRy"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="70" id="5yc-rT-19x">
+                                                <variation key="heightClass=compact-widthClass=compact" constant="50"/>
+                                            </constraint>
+                                        </constraints>
+                                        <variation key="heightClass=compact-widthClass=compact" axis="horizontal" distribution="fillEqually" spacingType="standard"/>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="275" id="bk7-5C-Zub"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.032749992591446689" green="0.0001080126025307041" blue="0.22469860406091369" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="2nZ-AS-Rih" secondAttribute="bottom" constant="30" id="IKl-9Q-lls">
+                                <variation key="heightClass=compact-widthClass=compact" constant="5"/>
+                            </constraint>
+                            <constraint firstItem="2nZ-AS-Rih" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="jdg-8g-l0V"/>
+                            <constraint firstItem="2nZ-AS-Rih" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="30" id="sZu-vN-N12">
+                                <variation key="heightClass=compact-widthClass=compact" constant="10"/>
+                            </constraint>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <variation key="widthClass=compact">
+                            <mask key="constraints">
+                                <include reference="sZu-vN-N12"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=compact-widthClass=compact">
+                            <mask key="constraints">
+                                <include reference="IKl-9Q-lls"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="dayImage" destination="Lm6-LG-bOf" id="aMY-pN-GYb"/>
+                        <outlet property="dayLabel" destination="SEd-ri-mpV" id="NF7-ET-Trc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="135" y="132.5"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="helloworld" width="500" height="500"/>
+    </resources>
+</document>
