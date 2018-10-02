@@ -86,6 +86,7 @@
                             </stackView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <gestureRecognizers/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="HrZ-HL-yRd" secondAttribute="trailing" constant="20" id="DCb-Ni-G0d"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="HrZ-HL-yRd" secondAttribute="bottom" constant="300" id="TPk-4N-rdu"/>
@@ -93,6 +94,9 @@
                             <constraint firstItem="HrZ-HL-yRd" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="lAh-Nq-6Fu"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="XF2-NB-Ty6" appends="YES" id="E7S-Fc-TrW"/>
+                        </connections>
                     </view>
                     <connections>
                         <outlet property="feetInput" destination="Ud8-hK-IDy" id="Ccw-Lz-zOp"/>
@@ -101,9 +105,9 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
-                <tapGestureRecognizer id="YI7-B1-FaV">
+                <tapGestureRecognizer id="XF2-NB-Ty6">
                     <connections>
-                        <action selector="onTapGestureRecognized:" destination="BYZ-38-t0r" id="8mv-p7-1OD"/>
+                        <action selector="onTapGestureRecognized:" destination="BYZ-38-t0r" id="dfy-eK-tO0"/>
                     </connections>
                 </tapGestureRecognizer>
             </objects>
