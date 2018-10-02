@@ -13,11 +13,6 @@ class ViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var inchesInput: UITextField!
     @IBOutlet weak var metersOutput: UILabel!
     
-    @IBAction func onTapGestureRecognized(_ sender: Any) {
-        feetInput.resignFirstResponder()
-        inchesInput.resignFirstResponder()
-    }
-    
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         textField.resignFirstResponder()
         return true
@@ -80,6 +75,10 @@ class ViewController: UIViewController, UITextFieldDelegate {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
+    
+    @IBAction func onTapGestureRecognized(_ sender: Any) {
+        feetInput.resignFirstResponder()
+        inchesInput.resignFirstResponder()
+    }
 }
 
