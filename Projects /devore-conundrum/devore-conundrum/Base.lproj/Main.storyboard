@@ -57,7 +57,7 @@
                                 <rect key="frame" x="159" y="558" width="56" height="30"/>
                                 <state key="normal" title="Solution"/>
                                 <connections>
-                                    <segue destination="3zL-yM-xUc" kind="presentation" identifier="prepareSolution" id="mw3-ct-PZQ"/>
+                                    <segue destination="3zL-yM-xUc" kind="presentation" identifier="gotoSolution" id="mw3-ct-PZQ"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -134,7 +134,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZFt-FK-dPm" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="2Id-59-Xva" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="863" y="32"/>
+            <point key="canvasLocation" x="1418" y="32"/>
         </scene>
         <!--View Controller3-->
         <scene sceneID="4yx-Iu-O6f">
@@ -152,11 +152,13 @@
                                         <barButtonItem key="leftBarButtonItem" title="Back" id="wTJ-pk-E87">
                                             <connections>
                                                 <action selector="nextButton:" destination="BYZ-38-t0r" id="Upz-Ko-X1G"/>
+                                                <segue destination="7Og-8O-8bJ" kind="unwind" identifier="unwindBack" unwindAction="unwindBack:" id="Qq1-gd-gmp"/>
                                             </connections>
                                         </barButtonItem>
                                         <barButtonItem key="rightBarButtonItem" tag="1" systemItem="save" id="YmM-fk-o5v">
                                             <connections>
                                                 <action selector="nextButton:" destination="BYZ-38-t0r" id="6nJ-C2-M2q"/>
+                                                <segue destination="7Og-8O-8bJ" kind="unwind" identifier="unwindSave" unwindAction="unwindSave:" id="6Ny-pi-GcM"/>
                                             </connections>
                                         </barButtonItem>
                                     </navigationItem>
@@ -174,21 +176,21 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Zu5-ob-Ed2">
-                                <rect key="frame" x="20" y="401" width="335" height="225"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="225" id="C5p-mU-NZT"/>
-                                </constraints>
-                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="iA1-rv-QFF">
                                 <rect key="frame" x="20" y="125" width="335" height="225"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="225" id="4jU-8T-vgR"/>
+                                </constraints>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Zu5-ob-Ed2">
+                                <rect key="frame" x="20" y="401" width="335" height="225"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="225" id="C5p-mU-NZT"/>
                                 </constraints>
                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -215,10 +217,15 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Hm1-mE-rbc"/>
                     </view>
+                    <connections>
+                        <outlet property="riddleEntry" destination="iA1-rv-QFF" id="BtI-ZV-28l"/>
+                        <outlet property="solutionEntry" destination="Zu5-ob-Ed2" id="azy-Ue-UzW"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xJw-OG-IaT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="7Og-8O-8bJ" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="32.799999999999997" y="761.46926536731644"/>
+            <point key="canvasLocation" x="670" y="760"/>
         </scene>
     </scenes>
 </document>

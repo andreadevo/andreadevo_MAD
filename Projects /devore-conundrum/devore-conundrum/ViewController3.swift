@@ -10,9 +10,22 @@ import UIKit
 
 class ViewController3: UIViewController {
 
+    @IBOutlet weak var riddleEntry: UITextView!
+    @IBOutlet weak var solutionEntry: UITextView!
+    
+    // PREPARES SEGUE TO VIEWCONTROLLER1 - CONUNDRUM
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?)
+    {
+        if segue.identifier == "unwindSave"
+        {
+            let vc = segue.destination as! ViewController
+            vc.myRiddle.riddle = riddleEntry.text
+            vc.myRiddle.solution = solutionEntry.text
+        }
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
         // Do any additional setup after loading the view.
     }
 

@@ -29,13 +29,12 @@ class ViewController: UIViewController {
     }
     
     // PREPARES SEGUE TO VIEWCONTROLLER2 - SOLUTION
-    // followed tutorial on "prepare": https://learnappmaking.com/pass-data-between-view-controllers-swift-how-to/#forward-segues
     override func prepare(for segue: UIStoryboardSegue, sender: Any?)
     {
-        if segue.destination is ViewController2
+        if segue.identifier == "gotoSolution"
         {
-            let vc = segue.destination as! ViewController2
-            vc.solution = "Me"
+            let vc2 = segue.destination as! ViewController2
+            vc2.solution = myRiddles[1].solution
         }
     }
     
@@ -47,8 +46,15 @@ class ViewController: UIViewController {
     @IBAction func unwindBack(_ segue:UIStoryboardSegue){
     }
     
+    var myRiddle = Riddle(newRiddle:"",newSolution:"")
+
     // UNWINDS SAVE OPTION FROM VIEWCONTROLLER3 - ADD
     @IBAction func unwindSave(_ segue:UIStoryboardSegue){
+        myRiddles.append(myRiddle)
+//        riddleText.text=myRiddles[3].riddle
+//        let arrayLength = String(myRiddles.count)
+//        riddleText.text = arrayLength
+        riddleText.text = myRiddles[3].riddle
     }
 
     override func viewDidLoad() {
