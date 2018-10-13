@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Navigation items with more than one left or right bar item" minToolsVersion="7.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="devore_conundrum" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uNH-Hw-wrC">
+                                <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                                <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <items>
+                                    <navigationItem title="Conundrum" leftItemsSupplementBackButton="YES" largeTitleDisplayMode="always" id="bRe-Nd-y2C">
+                                        <barButtonItem key="leftBarButtonItem" title="Prev" id="8OH-tN-TQe">
+                                            <connections>
+                                                <action selector="nextButton:" destination="BYZ-38-t0r" id="aeb-Da-VvX"/>
+                                            </connections>
+                                        </barButtonItem>
+                                        <rightBarButtonItems>
+                                            <barButtonItem tag="1" title="Next" id="pOS-up-zpI">
+                                                <connections>
+                                                    <action selector="nextButton:" destination="BYZ-38-t0r" id="F01-4H-Fhf"/>
+                                                </connections>
+                                            </barButtonItem>
+                                            <barButtonItem systemItem="add" id="fio-El-jtj">
+                                                <connections>
+                                                    <segue destination="lFi-EU-NmY" kind="presentation" identifier="" id="i89-3y-FsF"/>
+                                                </connections>
+                                            </barButtonItem>
+                                        </rightBarButtonItems>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="Hello World" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2OR-k4-3mF">
+                                <rect key="frame" x="20" y="94" width="335" height="250"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="250" id="zNO-9o-xR0"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ghn-AV-o4S">
+                                <rect key="frame" x="159" y="558" width="56" height="30"/>
+                                <state key="normal" title="Solution"/>
+                                <connections>
+                                    <segue destination="3zL-yM-xUc" kind="presentation" identifier="prepareSolution" id="mw3-ct-PZQ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="2OR-k4-3mF" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="8vp-7c-exm"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="2OR-k4-3mF" secondAttribute="trailing" constant="20" id="G7f-XZ-e7k"/>
+                            <constraint firstItem="2OR-k4-3mF" firstAttribute="top" secondItem="uNH-Hw-wrC" secondAttribute="bottom" constant="30" id="JHr-en-cVZ"/>
+                            <constraint firstItem="Ghn-AV-o4S" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Srk-UF-oFO"/>
+                            <constraint firstItem="uNH-Hw-wrC" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="XRe-SD-4gU"/>
+                            <constraint firstItem="uNH-Hw-wrC" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="cmg-5b-Hkd"/>
+                            <constraint firstItem="uNH-Hw-wrC" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="lSl-Ih-DuF"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Ghn-AV-o4S" secondAttribute="bottom" constant="35" id="yqh-ne-h0o"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <toolbarItems/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="riddleText" destination="2OR-k4-3mF" id="7C6-Rv-OIU"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+        <!--View Controller2-->
+        <scene sceneID="nat-YS-BkF">
+            <objects>
+                <viewController id="3zL-yM-xUc" customClass="ViewController2" customModule="devore_conundrum" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="hMw-a1-lcN">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rQX-1H-wco">
+                                <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                                <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <items>
+                                    <navigationItem title="Solution" leftItemsSupplementBackButton="YES" largeTitleDisplayMode="always" id="21g-9G-2R8">
+                                        <barButtonItem key="rightBarButtonItem" tag="1" systemItem="done" id="047-s3-WfG">
+                                            <connections>
+                                                <action selector="nextButton:" destination="BYZ-38-t0r" id="5IZ-yU-soI"/>
+                                                <segue destination="2Id-59-Xva" kind="unwind" identifier="unwindSolution" unwindAction="unwindSolution:" id="h1c-OV-iK6"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cbb-04-5hH">
+                                <rect key="frame" x="20" y="94" width="335" height="300"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="300" id="azP-Yk-z51"/>
+                                </constraints>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="rQX-1H-wco" firstAttribute="top" secondItem="K69-TV-X0W" secondAttribute="top" id="6Ep-1g-yyP"/>
+                            <constraint firstItem="Cbb-04-5hH" firstAttribute="top" secondItem="rQX-1H-wco" secondAttribute="bottom" constant="30" id="Uh2-zy-DlS"/>
+                            <constraint firstItem="rQX-1H-wco" firstAttribute="trailing" secondItem="K69-TV-X0W" secondAttribute="trailing" id="X3k-ON-Wml"/>
+                            <constraint firstItem="rQX-1H-wco" firstAttribute="leading" secondItem="K69-TV-X0W" secondAttribute="leading" id="dIg-vD-FQL"/>
+                            <constraint firstItem="K69-TV-X0W" firstAttribute="trailing" secondItem="Cbb-04-5hH" secondAttribute="trailing" constant="20" id="jkx-Wl-NZo"/>
+                            <constraint firstItem="Cbb-04-5hH" firstAttribute="leading" secondItem="K69-TV-X0W" secondAttribute="leading" constant="20" id="xRs-NO-2fM"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="K69-TV-X0W"/>
+                    </view>
+                    <connections>
+                        <outlet property="solutionText" destination="Cbb-04-5hH" id="OiI-on-S9m"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZFt-FK-dPm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="2Id-59-Xva" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="863" y="32"/>
+        </scene>
+        <!--View Controller3-->
+        <scene sceneID="4yx-Iu-O6f">
+            <objects>
+                <viewController id="lFi-EU-NmY" customClass="ViewController3" customModule="devore_conundrum" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="OZZ-Hf-aiy">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ec5-TL-nND">
+                                <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                                <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <items>
+                                    <navigationItem title="Add" leftItemsSupplementBackButton="YES" largeTitleDisplayMode="always" id="wme-hF-jE9">
+                                        <barButtonItem key="leftBarButtonItem" title="Back" id="wTJ-pk-E87">
+                                            <connections>
+                                                <action selector="nextButton:" destination="BYZ-38-t0r" id="Upz-Ko-X1G"/>
+                                            </connections>
+                                        </barButtonItem>
+                                        <barButtonItem key="rightBarButtonItem" tag="1" systemItem="save" id="YmM-fk-o5v">
+                                            <connections>
+                                                <action selector="nextButton:" destination="BYZ-38-t0r" id="6nJ-C2-M2q"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Riddle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NwB-Wz-6K4">
+                                <rect key="frame" x="20" y="94" width="48" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Solution" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ILH-qc-v7x">
+                                <rect key="frame" x="20" y="370" width="62.5" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Zu5-ob-Ed2">
+                                <rect key="frame" x="20" y="401" width="335" height="225"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="225" id="C5p-mU-NZT"/>
+                                </constraints>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="iA1-rv-QFF">
+                                <rect key="frame" x="20" y="125" width="335" height="225"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="225" id="4jU-8T-vgR"/>
+                                </constraints>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Hm1-mE-rbc" firstAttribute="trailing" secondItem="Zu5-ob-Ed2" secondAttribute="trailing" constant="20" id="09S-Hb-OCf"/>
+                            <constraint firstItem="NwB-Wz-6K4" firstAttribute="top" secondItem="ec5-TL-nND" secondAttribute="bottom" constant="30" id="4u3-if-iS4"/>
+                            <constraint firstItem="ec5-TL-nND" firstAttribute="top" secondItem="Hm1-mE-rbc" secondAttribute="top" id="7hr-t1-tvZ"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="NwB-Wz-6K4" secondAttribute="trailing" constant="20" symbolic="YES" id="CjP-i5-BO7"/>
+                            <constraint firstItem="iA1-rv-QFF" firstAttribute="top" secondItem="NwB-Wz-6K4" secondAttribute="bottom" constant="10" id="FJ8-DK-OD3"/>
+                            <constraint firstItem="ILH-qc-v7x" firstAttribute="top" secondItem="iA1-rv-QFF" secondAttribute="bottom" constant="20" id="LXI-7n-b31"/>
+                            <constraint firstItem="Zu5-ob-Ed2" firstAttribute="top" secondItem="ILH-qc-v7x" secondAttribute="bottom" constant="10" id="SPS-a5-4Hc"/>
+                            <constraint firstItem="NwB-Wz-6K4" firstAttribute="leading" secondItem="Hm1-mE-rbc" secondAttribute="leading" constant="20" id="Tsa-zb-bDm"/>
+                            <constraint firstItem="ec5-TL-nND" firstAttribute="trailing" secondItem="Hm1-mE-rbc" secondAttribute="trailing" id="Tud-eP-Na5"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="ILH-qc-v7x" secondAttribute="trailing" constant="20" symbolic="YES" id="Us0-43-mBU"/>
+                            <constraint firstItem="iA1-rv-QFF" firstAttribute="leading" secondItem="Hm1-mE-rbc" secondAttribute="leading" constant="20" id="ZRn-zu-2Nx"/>
+                            <constraint firstItem="Hm1-mE-rbc" firstAttribute="trailing" secondItem="iA1-rv-QFF" secondAttribute="trailing" constant="20" id="ZwO-Qb-ewn"/>
+                            <constraint firstItem="ILH-qc-v7x" firstAttribute="leading" secondItem="Hm1-mE-rbc" secondAttribute="leading" constant="20" id="avU-5z-ojc"/>
+                            <constraint firstItem="Zu5-ob-Ed2" firstAttribute="leading" secondItem="Hm1-mE-rbc" secondAttribute="leading" constant="20" id="rHL-t1-fvP"/>
+                            <constraint firstItem="ec5-TL-nND" firstAttribute="leading" secondItem="Hm1-mE-rbc" secondAttribute="leading" id="yUA-tO-9Fk"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Hm1-mE-rbc"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xJw-OG-IaT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="32.799999999999997" y="761.46926536731644"/>
+        </scene>
+    </scenes>
+</document>

@@ -1,0 +1,595 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6503AD92216F0469009C232D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6503AD91216F0469009C232D /* AppDelegate.swift */; };
+		6503AD94216F0469009C232D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6503AD93216F0469009C232D /* ViewController.swift */; };
+		6503AD97216F0469009C232D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6503AD95216F0469009C232D /* Main.storyboard */; };
+		6503AD99216F046A009C232D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6503AD98216F046A009C232D /* Assets.xcassets */; };
+		6503AD9C216F046A009C232D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6503AD9A216F046A009C232D /* LaunchScreen.storyboard */; };
+		6503ADA7216F046A009C232D /* devore_conundrumTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6503ADA6216F046A009C232D /* devore_conundrumTests.swift */; };
+		6503ADB2216F046A009C232D /* devore_conundrumUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6503ADB1216F046A009C232D /* devore_conundrumUITests.swift */; };
+		6503ADC0216FBFC5009C232D /* riddles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6503ADBF216FBFC5009C232D /* riddles.swift */; };
+		6503ADC2216FD863009C232D /* ViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6503ADC1216FD863009C232D /* ViewController2.swift */; };
+		6503ADC42171A9CA009C232D /* ViewController3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6503ADC32171A9CA009C232D /* ViewController3.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6503ADA3216F046A009C232D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6503AD86216F0469009C232D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6503AD8D216F0469009C232D;
+			remoteInfo = "devore-conundrum";
+		};
+		6503ADAE216F046A009C232D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6503AD86216F0469009C232D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6503AD8D216F0469009C232D;
+			remoteInfo = "devore-conundrum";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		6503AD8E216F0469009C232D /* devore-conundrum.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "devore-conundrum.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6503AD91216F0469009C232D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		6503AD93216F0469009C232D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		6503AD96216F0469009C232D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		6503AD98216F046A009C232D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6503AD9B216F046A009C232D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		6503AD9D216F046A009C232D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6503ADA2216F046A009C232D /* devore-conundrumTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "devore-conundrumTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6503ADA6216F046A009C232D /* devore_conundrumTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = devore_conundrumTests.swift; sourceTree = "<group>"; };
+		6503ADA8216F046A009C232D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6503ADAD216F046A009C232D /* devore-conundrumUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "devore-conundrumUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6503ADB1216F046A009C232D /* devore_conundrumUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = devore_conundrumUITests.swift; sourceTree = "<group>"; };
+		6503ADB3216F046A009C232D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6503ADBF216FBFC5009C232D /* riddles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = riddles.swift; sourceTree = "<group>"; };
+		6503ADC1216FD863009C232D /* ViewController2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController2.swift; sourceTree = "<group>"; };
+		6503ADC32171A9CA009C232D /* ViewController3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController3.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6503AD8B216F0469009C232D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6503AD9F216F046A009C232D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6503ADAA216F046A009C232D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6503AD85216F0469009C232D = {
+			isa = PBXGroup;
+			children = (
+				6503AD90216F0469009C232D /* devore-conundrum */,
+				6503ADA5216F046A009C232D /* devore-conundrumTests */,
+				6503ADB0216F046A009C232D /* devore-conundrumUITests */,
+				6503AD8F216F0469009C232D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6503AD8F216F0469009C232D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6503AD8E216F0469009C232D /* devore-conundrum.app */,
+				6503ADA2216F046A009C232D /* devore-conundrumTests.xctest */,
+				6503ADAD216F046A009C232D /* devore-conundrumUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6503AD90216F0469009C232D /* devore-conundrum */ = {
+			isa = PBXGroup;
+			children = (
+				6503AD91216F0469009C232D /* AppDelegate.swift */,
+				6503AD93216F0469009C232D /* ViewController.swift */,
+				6503ADC1216FD863009C232D /* ViewController2.swift */,
+				6503ADC32171A9CA009C232D /* ViewController3.swift */,
+				6503AD95216F0469009C232D /* Main.storyboard */,
+				6503ADBF216FBFC5009C232D /* riddles.swift */,
+				6503AD98216F046A009C232D /* Assets.xcassets */,
+				6503AD9A216F046A009C232D /* LaunchScreen.storyboard */,
+				6503AD9D216F046A009C232D /* Info.plist */,
+			);
+			path = "devore-conundrum";
+			sourceTree = "<group>";
+		};
+		6503ADA5216F046A009C232D /* devore-conundrumTests */ = {
+			isa = PBXGroup;
+			children = (
+				6503ADA6216F046A009C232D /* devore_conundrumTests.swift */,
+				6503ADA8216F046A009C232D /* Info.plist */,
+			);
+			path = "devore-conundrumTests";
+			sourceTree = "<group>";
+		};
+		6503ADB0216F046A009C232D /* devore-conundrumUITests */ = {
+			isa = PBXGroup;
+			children = (
+				6503ADB1216F046A009C232D /* devore_conundrumUITests.swift */,
+				6503ADB3216F046A009C232D /* Info.plist */,
+			);
+			path = "devore-conundrumUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6503AD8D216F0469009C232D /* devore-conundrum */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6503ADB6216F046A009C232D /* Build configuration list for PBXNativeTarget "devore-conundrum" */;
+			buildPhases = (
+				6503AD8A216F0469009C232D /* Sources */,
+				6503AD8B216F0469009C232D /* Frameworks */,
+				6503AD8C216F0469009C232D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "devore-conundrum";
+			productName = "devore-conundrum";
+			productReference = 6503AD8E216F0469009C232D /* devore-conundrum.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6503ADA1216F046A009C232D /* devore-conundrumTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6503ADB9216F046A009C232D /* Build configuration list for PBXNativeTarget "devore-conundrumTests" */;
+			buildPhases = (
+				6503AD9E216F046A009C232D /* Sources */,
+				6503AD9F216F046A009C232D /* Frameworks */,
+				6503ADA0216F046A009C232D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6503ADA4216F046A009C232D /* PBXTargetDependency */,
+			);
+			name = "devore-conundrumTests";
+			productName = "devore-conundrumTests";
+			productReference = 6503ADA2216F046A009C232D /* devore-conundrumTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		6503ADAC216F046A009C232D /* devore-conundrumUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6503ADBC216F046A009C232D /* Build configuration list for PBXNativeTarget "devore-conundrumUITests" */;
+			buildPhases = (
+				6503ADA9216F046A009C232D /* Sources */,
+				6503ADAA216F046A009C232D /* Frameworks */,
+				6503ADAB216F046A009C232D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6503ADAF216F046A009C232D /* PBXTargetDependency */,
+			);
+			name = "devore-conundrumUITests";
+			productName = "devore-conundrumUITests";
+			productReference = 6503ADAD216F046A009C232D /* devore-conundrumUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6503AD86216F0469009C232D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0940;
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = Andrea;
+				TargetAttributes = {
+					6503AD8D216F0469009C232D = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+					6503ADA1216F046A009C232D = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = 6503AD8D216F0469009C232D;
+					};
+					6503ADAC216F046A009C232D = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = 6503AD8D216F0469009C232D;
+					};
+				};
+			};
+			buildConfigurationList = 6503AD89216F0469009C232D /* Build configuration list for PBXProject "devore-conundrum" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6503AD85216F0469009C232D;
+			productRefGroup = 6503AD8F216F0469009C232D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6503AD8D216F0469009C232D /* devore-conundrum */,
+				6503ADA1216F046A009C232D /* devore-conundrumTests */,
+				6503ADAC216F046A009C232D /* devore-conundrumUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6503AD8C216F0469009C232D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6503AD9C216F046A009C232D /* LaunchScreen.storyboard in Resources */,
+				6503AD99216F046A009C232D /* Assets.xcassets in Resources */,
+				6503AD97216F0469009C232D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6503ADA0216F046A009C232D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6503ADAB216F046A009C232D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6503AD8A216F0469009C232D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6503ADC42171A9CA009C232D /* ViewController3.swift in Sources */,
+				6503ADC0216FBFC5009C232D /* riddles.swift in Sources */,
+				6503ADC2216FD863009C232D /* ViewController2.swift in Sources */,
+				6503AD94216F0469009C232D /* ViewController.swift in Sources */,
+				6503AD92216F0469009C232D /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6503AD9E216F046A009C232D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6503ADA7216F046A009C232D /* devore_conundrumTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6503ADA9216F046A009C232D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6503ADB2216F046A009C232D /* devore_conundrumUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6503ADA4216F046A009C232D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6503AD8D216F0469009C232D /* devore-conundrum */;
+			targetProxy = 6503ADA3216F046A009C232D /* PBXContainerItemProxy */;
+		};
+		6503ADAF216F046A009C232D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6503AD8D216F0469009C232D /* devore-conundrum */;
+			targetProxy = 6503ADAE216F046A009C232D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		6503AD95216F0469009C232D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6503AD96216F0469009C232D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		6503AD9A216F046A009C232D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6503AD9B216F046A009C232D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6503ADB4216F046A009C232D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		6503ADB5216F046A009C232D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6503ADB7216F046A009C232D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "devore-conundrum/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "andrea.devore-conundrum";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6503ADB8216F046A009C232D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "devore-conundrum/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "andrea.devore-conundrum";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		6503ADBA216F046A009C232D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "devore-conundrumTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "andrea.devore-conundrumTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/devore-conundrum.app/devore-conundrum";
+			};
+			name = Debug;
+		};
+		6503ADBB216F046A009C232D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "devore-conundrumTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "andrea.devore-conundrumTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/devore-conundrum.app/devore-conundrum";
+			};
+			name = Release;
+		};
+		6503ADBD216F046A009C232D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "devore-conundrumUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "andrea.devore-conundrumUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "devore-conundrum";
+			};
+			name = Debug;
+		};
+		6503ADBE216F046A009C232D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "devore-conundrumUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "andrea.devore-conundrumUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "devore-conundrum";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6503AD89216F0469009C232D /* Build configuration list for PBXProject "devore-conundrum" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6503ADB4216F046A009C232D /* Debug */,
+				6503ADB5216F046A009C232D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6503ADB6216F046A009C232D /* Build configuration list for PBXNativeTarget "devore-conundrum" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6503ADB7216F046A009C232D /* Debug */,
+				6503ADB8216F046A009C232D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6503ADB9216F046A009C232D /* Build configuration list for PBXNativeTarget "devore-conundrumTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6503ADBA216F046A009C232D /* Debug */,
+				6503ADBB216F046A009C232D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6503ADBC216F046A009C232D /* Build configuration list for PBXNativeTarget "devore-conundrumUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6503ADBD216F046A009C232D /* Debug */,
+				6503ADBE216F046A009C232D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6503AD86216F0469009C232D /* Project object */;
+}
