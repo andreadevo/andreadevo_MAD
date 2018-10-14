@@ -134,7 +134,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZFt-FK-dPm" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="2Id-59-Xva" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="1418" y="32"/>
+            <point key="canvasLocation" x="959" y="121"/>
         </scene>
         <!--View Controller3-->
         <scene sceneID="4yx-Iu-O6f">
@@ -171,28 +171,26 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Solution" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ILH-qc-v7x">
-                                <rect key="frame" x="20" y="370" width="62.5" height="21"/>
+                                <rect key="frame" x="20" y="370" width="63" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="iA1-rv-QFF">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Happy" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="iA1-rv-QFF">
                                 <rect key="frame" x="20" y="125" width="335" height="225"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="225" id="4jU-8T-vgR"/>
                                 </constraints>
-                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Zu5-ob-Ed2">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Sunday" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Zu5-ob-Ed2">
                                 <rect key="frame" x="20" y="401" width="335" height="225"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="225" id="C5p-mU-NZT"/>
                                 </constraints>
-                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
@@ -216,6 +214,9 @@
                             <constraint firstItem="ec5-TL-nND" firstAttribute="leading" secondItem="Hm1-mE-rbc" secondAttribute="leading" id="yUA-tO-9Fk"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Hm1-mE-rbc"/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="bZ0-Oh-UEa" appends="YES" id="KHv-xV-Tqc"/>
+                        </connections>
                     </view>
                     <connections>
                         <outlet property="riddleEntry" destination="iA1-rv-QFF" id="BtI-ZV-28l"/>
@@ -224,8 +225,13 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xJw-OG-IaT" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="7Og-8O-8bJ" userLabel="Exit" sceneMemberID="exit"/>
+                <tapGestureRecognizer id="bZ0-Oh-UEa">
+                    <connections>
+                        <action selector="onTapGestureRecognized:" destination="lFi-EU-NmY" id="6sc-Dq-JFF"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="670" y="760"/>
+            <point key="canvasLocation" x="140" y="922"/>
         </scene>
     </scenes>
 </document>

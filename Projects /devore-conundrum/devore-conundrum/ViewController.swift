@@ -51,10 +51,13 @@ class ViewController: UIViewController {
     // UNWINDS SAVE OPTION FROM VIEWCONTROLLER3 - ADD
     @IBAction func unwindSave(_ segue:UIStoryboardSegue){
         myRiddles.append(myRiddle)
-//        riddleText.text=myRiddles[3].riddle
+        riddleText.text=myRiddles[3].riddle
 //        let arrayLength = String(myRiddles.count)
 //        riddleText.text = arrayLength
-        riddleText.text = myRiddles[3].riddle
+        for element in myRiddles {
+            print(element.riddle, terminator: " ")
+        }
+//        riddleText.text = myRiddles[3].riddle
     }
 
     override func viewDidLoad() {

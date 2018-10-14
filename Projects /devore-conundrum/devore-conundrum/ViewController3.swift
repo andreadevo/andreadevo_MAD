@@ -24,6 +24,18 @@ class ViewController3: UIViewController {
         }
     }
     
+    // DISMISS KEYBOARD (RETURN)
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return true
+    }
+    
+    // DISMISS KEYBOARD (TAP ON SCREEN)
+    @IBAction func onTapGestureRecognized(_ sender: Any) {
+        riddleEntry.resignFirstResponder()
+        solutionEntry.resignFirstResponder()
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.

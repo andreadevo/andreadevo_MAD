@@ -8,7 +8,7 @@
 
 import Foundation
 
-class Riddle : Codable {
+struct Riddle : Codable {
     var riddle : String = ""
     var solution : String = ""
     
