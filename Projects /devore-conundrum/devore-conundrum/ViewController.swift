@@ -7,24 +7,61 @@
 //
 
 import UIKit
+import GameplayKit
 
 class ViewController: UIViewController {
     @IBOutlet weak var riddleText: UITextView!  // connection to riddle
+    var currentPosition : Int = 0                      // tracks position in riddleText array
+    
     // array of class of riddles
     var myRiddles=[
-        Riddle(newRiddle:"hello", newSolution:"world"),
-        Riddle(newRiddle:"good", newSolution:"dog"),
-        Riddle(newRiddle:"incredible", newSolution:"people")
+        Riddle(newRiddle:"What makes more as you take them?", newSolution:"Footsteps"),
+        Riddle(newRiddle:"A boy is walking down the road with a doctor. While the boy is the doctor's son, the doctor isn't the boy's father.", newSolution:"The doctor is the boy's mother."),
+        Riddle(newRiddle:"The number 8,549,176,320 is a unique number. Can you tell me what is so special about it?", newSolution:"This is the only number which includes all digits arranged in alphabetical order."),
+         Riddle(newRiddle:"A man is condemned to death has the option of picking one of the mentioned rooms. The first room is a furnace filled with feeding flames, the second has armed men with loaded guns, the third has lions who have been starving for years. Which one should the name choose?", newSolution:"The third room.")
     ];
     
-    var prevRiddles = [Int]();
+    var prevRiddles = [Int]()
+    
+    func populateRiddle(){
+        riddleText.text = myRiddles[currentPosition].riddle
+    }
+    
+    func checkPosition() -> Bool {
+        let arrayLength = myRiddles.count
+        if currentPosition == arrayLength - 1 {
+            // at the end of the array
+            return false
+        } else {
+            // not at end
+            return true
+        }
+    }
 
-    @IBAction func nextButton(_ sender: UIBarButtonItem) {
+    @IBAction func changeRiddle(_ sender: UIBarButtonItem) {
+        let arrayLength = myRiddles.count
         if sender.tag==1 {
-            riddleText.text=myRiddles[1].riddle;
+            // next button, go to next element
+            if currentPosition ==  arrayLength - 1 {
+                // at end of array, wrap to beginning
+                currentPosition = 0
+            }
+            else {
+                currentPosition = currentPosition + 1
+            }
+            print(currentPosition)
+            riddleText.text=myRiddles[currentPosition].riddle
         }
         else if sender.tag==2 {
-            riddleText.text=myRiddles[0].riddle;
+            // previous button, go to previous element
+            if currentPosition == 0 {
+                // at beginning of array, wrap to end
+                currentPosition = arrayLength - 1
+            }
+            else {
+                currentPosition = currentPosition - 1
+            }
+            riddleText.text=myRiddles[currentPosition].riddle;
         }
     }
     
@@ -34,7 +71,7 @@ class ViewController: UIViewController {
         if segue.identifier == "gotoSolution"
         {
             let vc2 = segue.destination as! ViewController2
-            vc2.solution = myRiddles[1].solution
+            vc2.solution = myRiddles[currentPosition].solution
         }
     }
     
@@ -51,16 +88,14 @@ class ViewController: UIViewController {
     // UNWINDS SAVE OPTION FROM VIEWCONTROLLER3 - ADD
     @IBAction func unwindSave(_ segue:UIStoryboardSegue){
         myRiddles.append(myRiddle)
-        riddleText.text=myRiddles[3].riddle
-//        let arrayLength = String(myRiddles.count)
-//        riddleText.text = arrayLength
+        print (myRiddles.count)
         for element in myRiddles {
             print(element.riddle, terminator: " ")
         }
-//        riddleText.text = myRiddles[3].riddle
     }
 
     override func viewDidLoad() {
+        populateRiddle();
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
     }
