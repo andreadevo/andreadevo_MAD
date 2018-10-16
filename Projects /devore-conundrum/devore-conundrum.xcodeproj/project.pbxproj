@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		6503AD92216F0469009C232D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6503AD91216F0469009C232D /* AppDelegate.swift */; };
-		6503AD94216F0469009C232D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6503AD93216F0469009C232D /* ViewController.swift */; };
 		6503AD97216F0469009C232D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6503AD95216F0469009C232D /* Main.storyboard */; };
 		6503AD99216F046A009C232D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6503AD98216F046A009C232D /* Assets.xcassets */; };
 		6503AD9C216F046A009C232D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6503AD9A216F046A009C232D /* LaunchScreen.storyboard */; };
@@ -17,6 +16,7 @@
 		6503ADC0216FBFC5009C232D /* riddles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6503ADBF216FBFC5009C232D /* riddles.swift */; };
 		6503ADC2216FD863009C232D /* ViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6503ADC1216FD863009C232D /* ViewController2.swift */; };
 		6503ADC42171A9CA009C232D /* ViewController3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6503ADC32171A9CA009C232D /* ViewController3.swift */; };
+		65715CE52175675A00FB48AF /* ViewController1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65715CE42175675A00FB48AF /* ViewController1.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +39,6 @@
 /* Begin PBXFileReference section */
 		6503AD8E216F0469009C232D /* devore-conundrum.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "devore-conundrum.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6503AD91216F0469009C232D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		6503AD93216F0469009C232D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		6503AD96216F0469009C232D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6503AD98216F046A009C232D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6503AD9B216F046A009C232D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -53,6 +52,7 @@
 		6503ADBF216FBFC5009C232D /* riddles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = riddles.swift; sourceTree = "<group>"; };
 		6503ADC1216FD863009C232D /* ViewController2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController2.swift; sourceTree = "<group>"; };
 		6503ADC32171A9CA009C232D /* ViewController3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController3.swift; sourceTree = "<group>"; };
+		65715CE42175675A00FB48AF /* ViewController1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController1.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,7 +104,7 @@
 			isa = PBXGroup;
 			children = (
 				6503AD91216F0469009C232D /* AppDelegate.swift */,
-				6503AD93216F0469009C232D /* ViewController.swift */,
+				65715CE42175675A00FB48AF /* ViewController1.swift */,
 				6503ADC1216FD863009C232D /* ViewController2.swift */,
 				6503ADC32171A9CA009C232D /* ViewController3.swift */,
 				6503AD95216F0469009C232D /* Main.storyboard */,
@@ -265,10 +265,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				65715CE52175675A00FB48AF /* ViewController1.swift in Sources */,
 				6503ADC42171A9CA009C232D /* ViewController3.swift in Sources */,
 				6503ADC0216FBFC5009C232D /* riddles.swift in Sources */,
 				6503ADC2216FD863009C232D /* ViewController2.swift in Sources */,
-				6503AD94216F0469009C232D /* ViewController.swift in Sources */,
 				6503AD92216F0469009C232D /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -37,15 +37,12 @@ class ViewController3: UIViewController, UITextViewDelegate {
         NotificationCenter.default.removeObserver(self)
     }
     
+    // ALLOWS USER TO SCROLL W/ KEYBOARD: https://www.raywenderlich.com/560-uiscrollview-tutorial-getting-started
     func adjustInsetForKeyboardShow(_ show: Bool, notification: Notification) {
         let userInfo = notification.userInfo ?? [:]
         let keyboardFrame = (userInfo[UIKeyboardFrameEndUserInfoKey] as! NSValue).cgRectValue
         let adjustmentHeight = (keyboardFrame.height + 20) * (show ? 1 : -1)
-        print(keyboardFrame.height)
-        print(adjustmentHeight)
-        print("before", scrollView.contentInset.bottom)
         scrollView.contentInset.bottom += adjustmentHeight
-        print("after", scrollView.contentInset.bottom)
         scrollView.scrollIndicatorInsets.bottom += adjustmentHeight
     }
     
@@ -62,7 +59,7 @@ class ViewController3: UIViewController, UITextViewDelegate {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?)
     {
         if segue.identifier == "unwindSave" {
-            let vc = segue.destination as! ViewController
+            let vc = segue.destination as! ViewController1
             vc.myRiddle.riddle = riddleEntry.text
             vc.myRiddle.solution = solutionEntry.text
         }
@@ -94,17 +91,11 @@ class ViewController3: UIViewController, UITextViewDelegate {
     override func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool {
         if identifier == "unwindSave" {
             if riddleEntry.text.isEmpty == true {
-                print("*** NOPE, segue wont occur")
                 let alert=UIAlertController(title: "Missing Text", message: "Both Riddle and Solution text fields should be filled.", preferredStyle: UIAlertControllerStyle.alert)
                 let okAction=UIAlertAction(title: "OK", style:UIAlertActionStyle.default, handler: nil)
                 alert.addAction(okAction)
                 present(alert, animated: true)
                 return false
-            }
-            else {
-                print("*** YEP, segue will occur")
-                let alert=UIAlertController(title: "Success", message: "Your riddle has been added!", preferredStyle: UIAlertControllerStyle.alert)
-                present(alert, animated: true)
             }
         }
         return true
