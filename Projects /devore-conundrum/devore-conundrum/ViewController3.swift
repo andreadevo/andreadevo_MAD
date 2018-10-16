@@ -16,9 +16,47 @@ class ViewController3: UIViewController, UITextViewDelegate {
     @IBOutlet weak var scrollView: UIScrollView!
     
     override func viewDidLoad() {
+        NotificationCenter.default.addObserver(
+            self,
+            selector: #selector(ViewController3.keyboardWillShow(_:)),
+            name: Notification.Name.UIKeyboardWillShow,
+            object: nil
+        )
+        NotificationCenter.default.addObserver(
+            self,
+            selector: #selector(ViewController3.keyboardWillHide(_:)),
+            name: Notification.Name.UIKeyboardWillHide,
+            object: nil
+        )
+
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
+    
+    deinit {
+        NotificationCenter.default.removeObserver(self)
+    }
+    
+    func adjustInsetForKeyboardShow(_ show: Bool, notification: Notification) {
+        let userInfo = notification.userInfo ?? [:]
+        let keyboardFrame = (userInfo[UIKeyboardFrameEndUserInfoKey] as! NSValue).cgRectValue
+        let adjustmentHeight = (keyboardFrame.height + 20) * (show ? 1 : -1)
+        print(keyboardFrame.height)
+        print(adjustmentHeight)
+        print("before", scrollView.contentInset.bottom)
+        scrollView.contentInset.bottom += adjustmentHeight
+        print("after", scrollView.contentInset.bottom)
+        scrollView.scrollIndicatorInsets.bottom += adjustmentHeight
+    }
+    
+    @objc func keyboardWillShow(_ notification: Notification) {
+        adjustInsetForKeyboardShow(true, notification: notification)
+    }
+    
+    @objc func keyboardWillHide(_ notification: Notification) {
+        adjustInsetForKeyboardShow(false, notification: notification)
+    }
+
     
     // PREPARES SEGUE TO VIEWCONTROLLER1 - CONUNDRUM
     override func prepare(for segue: UIStoryboardSegue, sender: Any?)

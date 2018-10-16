@@ -11,17 +11,15 @@ import GameplayKit
 
 class ViewController: UIViewController {
     @IBOutlet weak var riddleText: UITextView!  // connection to riddle
-    var currentPosition : Int = 0                      // tracks position in riddleText array
+    var currentPosition : Int = 0               // tracks position in riddleText array
     
     // array of class of riddles
     var myRiddles=[
         Riddle(newRiddle:"What makes more as you take them?", newSolution:"Footsteps"),
         Riddle(newRiddle:"A boy is walking down the road with a doctor. While the boy is the doctor's son, the doctor isn't the boy's father.", newSolution:"The doctor is the boy's mother."),
         Riddle(newRiddle:"The number 8,549,176,320 is a unique number. Can you tell me what is so special about it?", newSolution:"This is the only number which includes all digits arranged in alphabetical order."),
-         Riddle(newRiddle:"A man is condemned to death has the option of picking one of the mentioned rooms. The first room is a furnace filled with feeding flames, the second has armed men with loaded guns, the third has lions who have been starving for years. Which one should the name choose?", newSolution:"The third room.")
+        Riddle(newRiddle:"A man is condemned to death has the option of picking one of the mentioned rooms. The first room is a furnace filled with feeding flames, the second has armed men with loaded guns, the third has lions who have been starving for years. Which one should the man choose?", newSolution:"The third room.")
     ];
-    
-    var prevRiddles = [Int]()
     
     func populateRiddle(){
         riddleText.text = myRiddles[currentPosition].riddle
@@ -71,7 +69,7 @@ class ViewController: UIViewController {
         if segue.identifier == "gotoSolution"
         {
             let vc2 = segue.destination as! ViewController2
-            vc2.solution = myRiddles[currentPosition].solution
+            vc2.solution = myRiddles[1].solution
         }
     }
     
@@ -95,6 +93,8 @@ class ViewController: UIViewController {
     }
 
     override func viewDidLoad() {
+        currentPosition = Int(arc4random_uniform(UInt32(myRiddles.count)))
+        print(currentPosition)
         populateRiddle();
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
