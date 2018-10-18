@@ -13,12 +13,17 @@ class ViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var workoutInput: UITextField!
     @IBOutlet weak var milesLabel: UILabel!
     @IBOutlet weak var caloriesLabel: UILabel!
+    @IBOutlet weak var weeksSwitch: UISwitch!
+    @IBOutlet weak var activitySwitch: UISegmentedControl!
+    @IBOutlet weak var activityImage: UIImageView!
     
+    // dismiss keyboard
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         textField.resignFirstResponder()
         return true
     }
     
+    // updates labels based on user input
     func updateWorkout() {
         var time:Float
         var calculateMiles:Float=0.0
@@ -57,9 +62,71 @@ class ViewController: UIViewController, UITextFieldDelegate {
         }
     }
     
+    // button press to calculate workout
     @IBAction func calculateWorkout(_ sender: UIButton) {
         updateWorkout()
     }
+    
+    // updates calculates based on switch state
+    func updateWeeks() {
+        var time:Float
+        var calculateMiles:Float=0.0
+        var calculateCalories:Float=0.0
+        
+        if workoutInput.text!.isEmpty{
+            print("do nothing")
+        } else {
+            time=Float(workoutInput.text!)!
+            if weeksSwitch.isOn{
+                // change to weeks
+                calculateMiles = time/10*5
+                calculateCalories = time/60*600*5
+                
+                // display content on screen
+                let formatter = NumberFormatter()
+                formatter.numberStyle = NumberFormatter.Style.decimal
+                milesLabel.text = formatter.string(from: NSNumber(value: calculateMiles))! + " Miles/Week"
+                caloriesLabel.text = formatter.string(from: NSNumber(value: calculateCalories))! + " Calories Burned/Week"
+            }
+            else {
+                // return to original state
+                calculateMiles = time/10
+                calculateCalories = time/60*600
+                
+                // display content on screen
+                let formatter = NumberFormatter()
+                formatter.numberStyle = NumberFormatter.Style.decimal
+                milesLabel.text = formatter.string(from: NSNumber(value: calculateMiles))! + " Miles"
+                caloriesLabel.text = formatter.string(from: NSNumber(value: calculateCalories))! + " Calories Burned"
+            }
+        }
+    }
+    
+    // switch on/off to change from days to weeks
+    @IBAction func changeWeeks(_ sender: UISwitch) {
+        updateWeeks()
+    }
+    
+    func updateActivity() {
+        if activitySwitch.selectedSegmentIndex == 0 {
+            // run
+            activityImage.image=UIImage(named:"run")
+        }
+        else if activitySwitch.selectedSegmentIndex == 1 {
+            // bike
+            activityImage.image=UIImage(named:"bike")
+        }
+        else if activitySwitch.selectedSegmentIndex == 2 {
+            // swim
+            activityImage.image=UIImage(named:"swim")
+        }
+    }
+    
+    // switch between run, bike, and swim
+    @IBAction func changeActivity(_ sender: UISegmentedControl) {
+        updateActivity()
+    }
+    
         
     override func viewDidLoad() {
         workoutInput.delegate=self
