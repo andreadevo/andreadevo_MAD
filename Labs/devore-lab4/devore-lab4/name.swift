@@ -12,3 +12,4 @@ class Name : Codable {
     var firstName : String?
     var lastName : String?
 }
+

@@ -1,0 +1,585 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		65715CF32178F37B00FB48AF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65715CF22178F37B00FB48AF /* AppDelegate.swift */; };
+		65715CF52178F37B00FB48AF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65715CF42178F37B00FB48AF /* ViewController.swift */; };
+		65715CF82178F37B00FB48AF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65715CF62178F37B00FB48AF /* Main.storyboard */; };
+		65715CFA2178F37C00FB48AF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 65715CF92178F37C00FB48AF /* Assets.xcassets */; };
+		65715CFD2178F37C00FB48AF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65715CFB2178F37C00FB48AF /* LaunchScreen.storyboard */; };
+		65715D082178F37C00FB48AF /* devore_iOS_MidtermTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65715D072178F37C00FB48AF /* devore_iOS_MidtermTests.swift */; };
+		65715D132178F37C00FB48AF /* devore_iOS_MidtermUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65715D122178F37C00FB48AF /* devore_iOS_MidtermUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		65715D042178F37C00FB48AF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 65715CE72178F37B00FB48AF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 65715CEE2178F37B00FB48AF;
+			remoteInfo = "devore-iOS_Midterm";
+		};
+		65715D0F2178F37C00FB48AF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 65715CE72178F37B00FB48AF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 65715CEE2178F37B00FB48AF;
+			remoteInfo = "devore-iOS_Midterm";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		65715CEF2178F37B00FB48AF /* devore-iOS_Midterm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "devore-iOS_Midterm.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		65715CF22178F37B00FB48AF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		65715CF42178F37B00FB48AF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		65715CF72178F37B00FB48AF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		65715CF92178F37C00FB48AF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		65715CFC2178F37C00FB48AF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		65715CFE2178F37C00FB48AF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		65715D032178F37C00FB48AF /* devore-iOS_MidtermTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "devore-iOS_MidtermTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		65715D072178F37C00FB48AF /* devore_iOS_MidtermTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = devore_iOS_MidtermTests.swift; sourceTree = "<group>"; };
+		65715D092178F37C00FB48AF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		65715D0E2178F37C00FB48AF /* devore-iOS_MidtermUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "devore-iOS_MidtermUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		65715D122178F37C00FB48AF /* devore_iOS_MidtermUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = devore_iOS_MidtermUITests.swift; sourceTree = "<group>"; };
+		65715D142178F37C00FB48AF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		65715CEC2178F37B00FB48AF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		65715D002178F37C00FB48AF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		65715D0B2178F37C00FB48AF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		65715CE62178F37B00FB48AF = {
+			isa = PBXGroup;
+			children = (
+				65715CF12178F37B00FB48AF /* devore-iOS_Midterm */,
+				65715D062178F37C00FB48AF /* devore-iOS_MidtermTests */,
+				65715D112178F37C00FB48AF /* devore-iOS_MidtermUITests */,
+				65715CF02178F37B00FB48AF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		65715CF02178F37B00FB48AF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				65715CEF2178F37B00FB48AF /* devore-iOS_Midterm.app */,
+				65715D032178F37C00FB48AF /* devore-iOS_MidtermTests.xctest */,
+				65715D0E2178F37C00FB48AF /* devore-iOS_MidtermUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		65715CF12178F37B00FB48AF /* devore-iOS_Midterm */ = {
+			isa = PBXGroup;
+			children = (
+				65715CF22178F37B00FB48AF /* AppDelegate.swift */,
+				65715CF42178F37B00FB48AF /* ViewController.swift */,
+				65715CF62178F37B00FB48AF /* Main.storyboard */,
+				65715CF92178F37C00FB48AF /* Assets.xcassets */,
+				65715CFB2178F37C00FB48AF /* LaunchScreen.storyboard */,
+				65715CFE2178F37C00FB48AF /* Info.plist */,
+			);
+			path = "devore-iOS_Midterm";
+			sourceTree = "<group>";
+		};
+		65715D062178F37C00FB48AF /* devore-iOS_MidtermTests */ = {
+			isa = PBXGroup;
+			children = (
+				65715D072178F37C00FB48AF /* devore_iOS_MidtermTests.swift */,
+				65715D092178F37C00FB48AF /* Info.plist */,
+			);
+			path = "devore-iOS_MidtermTests";
+			sourceTree = "<group>";
+		};
+		65715D112178F37C00FB48AF /* devore-iOS_MidtermUITests */ = {
+			isa = PBXGroup;
+			children = (
+				65715D122178F37C00FB48AF /* devore_iOS_MidtermUITests.swift */,
+				65715D142178F37C00FB48AF /* Info.plist */,
+			);
+			path = "devore-iOS_MidtermUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		65715CEE2178F37B00FB48AF /* devore-iOS_Midterm */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 65715D172178F37C00FB48AF /* Build configuration list for PBXNativeTarget "devore-iOS_Midterm" */;
+			buildPhases = (
+				65715CEB2178F37B00FB48AF /* Sources */,
+				65715CEC2178F37B00FB48AF /* Frameworks */,
+				65715CED2178F37B00FB48AF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "devore-iOS_Midterm";
+			productName = "devore-iOS_Midterm";
+			productReference = 65715CEF2178F37B00FB48AF /* devore-iOS_Midterm.app */;
+			productType = "com.apple.product-type.application";
+		};
+		65715D022178F37C00FB48AF /* devore-iOS_MidtermTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 65715D1A2178F37C00FB48AF /* Build configuration list for PBXNativeTarget "devore-iOS_MidtermTests" */;
+			buildPhases = (
+				65715CFF2178F37C00FB48AF /* Sources */,
+				65715D002178F37C00FB48AF /* Frameworks */,
+				65715D012178F37C00FB48AF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				65715D052178F37C00FB48AF /* PBXTargetDependency */,
+			);
+			name = "devore-iOS_MidtermTests";
+			productName = "devore-iOS_MidtermTests";
+			productReference = 65715D032178F37C00FB48AF /* devore-iOS_MidtermTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		65715D0D2178F37C00FB48AF /* devore-iOS_MidtermUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 65715D1D2178F37C00FB48AF /* Build configuration list for PBXNativeTarget "devore-iOS_MidtermUITests" */;
+			buildPhases = (
+				65715D0A2178F37C00FB48AF /* Sources */,
+				65715D0B2178F37C00FB48AF /* Frameworks */,
+				65715D0C2178F37C00FB48AF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				65715D102178F37C00FB48AF /* PBXTargetDependency */,
+			);
+			name = "devore-iOS_MidtermUITests";
+			productName = "devore-iOS_MidtermUITests";
+			productReference = 65715D0E2178F37C00FB48AF /* devore-iOS_MidtermUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		65715CE72178F37B00FB48AF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0940;
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = Andrea;
+				TargetAttributes = {
+					65715CEE2178F37B00FB48AF = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+					65715D022178F37C00FB48AF = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = 65715CEE2178F37B00FB48AF;
+					};
+					65715D0D2178F37C00FB48AF = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = 65715CEE2178F37B00FB48AF;
+					};
+				};
+			};
+			buildConfigurationList = 65715CEA2178F37B00FB48AF /* Build configuration list for PBXProject "devore-iOS_Midterm" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 65715CE62178F37B00FB48AF;
+			productRefGroup = 65715CF02178F37B00FB48AF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				65715CEE2178F37B00FB48AF /* devore-iOS_Midterm */,
+				65715D022178F37C00FB48AF /* devore-iOS_MidtermTests */,
+				65715D0D2178F37C00FB48AF /* devore-iOS_MidtermUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		65715CED2178F37B00FB48AF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				65715CFD2178F37C00FB48AF /* LaunchScreen.storyboard in Resources */,
+				65715CFA2178F37C00FB48AF /* Assets.xcassets in Resources */,
+				65715CF82178F37B00FB48AF /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		65715D012178F37C00FB48AF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		65715D0C2178F37C00FB48AF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		65715CEB2178F37B00FB48AF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				65715CF52178F37B00FB48AF /* ViewController.swift in Sources */,
+				65715CF32178F37B00FB48AF /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		65715CFF2178F37C00FB48AF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				65715D082178F37C00FB48AF /* devore_iOS_MidtermTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		65715D0A2178F37C00FB48AF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				65715D132178F37C00FB48AF /* devore_iOS_MidtermUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		65715D052178F37C00FB48AF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 65715CEE2178F37B00FB48AF /* devore-iOS_Midterm */;
+			targetProxy = 65715D042178F37C00FB48AF /* PBXContainerItemProxy */;
+		};
+		65715D102178F37C00FB48AF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 65715CEE2178F37B00FB48AF /* devore-iOS_Midterm */;
+			targetProxy = 65715D0F2178F37C00FB48AF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		65715CF62178F37B00FB48AF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				65715CF72178F37B00FB48AF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		65715CFB2178F37C00FB48AF /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				65715CFC2178F37C00FB48AF /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		65715D152178F37C00FB48AF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		65715D162178F37C00FB48AF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		65715D182178F37C00FB48AF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 456BQ744YH;
+				INFOPLIST_FILE = "devore-iOS_Midterm/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "andrea.devore-iOS-Midterm";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		65715D192178F37C00FB48AF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 456BQ744YH;
+				INFOPLIST_FILE = "devore-iOS_Midterm/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "andrea.devore-iOS-Midterm";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		65715D1B2178F37C00FB48AF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "devore-iOS_MidtermTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "andrea.devore-iOS-MidtermTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/devore-iOS_Midterm.app/devore-iOS_Midterm";
+			};
+			name = Debug;
+		};
+		65715D1C2178F37C00FB48AF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "devore-iOS_MidtermTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "andrea.devore-iOS-MidtermTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/devore-iOS_Midterm.app/devore-iOS_Midterm";
+			};
+			name = Release;
+		};
+		65715D1E2178F37C00FB48AF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "devore-iOS_MidtermUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "andrea.devore-iOS-MidtermUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "devore-iOS_Midterm";
+			};
+			name = Debug;
+		};
+		65715D1F2178F37C00FB48AF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "devore-iOS_MidtermUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "andrea.devore-iOS-MidtermUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "devore-iOS_Midterm";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		65715CEA2178F37B00FB48AF /* Build configuration list for PBXProject "devore-iOS_Midterm" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				65715D152178F37C00FB48AF /* Debug */,
+				65715D162178F37C00FB48AF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		65715D172178F37C00FB48AF /* Build configuration list for PBXNativeTarget "devore-iOS_Midterm" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				65715D182178F37C00FB48AF /* Debug */,
+				65715D192178F37C00FB48AF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		65715D1A2178F37C00FB48AF /* Build configuration list for PBXNativeTarget "devore-iOS_MidtermTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				65715D1B2178F37C00FB48AF /* Debug */,
+				65715D1C2178F37C00FB48AF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		65715D1D2178F37C00FB48AF /* Build configuration list for PBXNativeTarget "devore-iOS_MidtermUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				65715D1E2178F37C00FB48AF /* Debug */,
+				65715D1F2178F37C00FB48AF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 65715CE72178F37B00FB48AF /* Project object */;
+}
