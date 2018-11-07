@@ -1,0 +1,26 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="android:Theme.Material.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="android:colorPrimary">@color/primaryColor</item>
+        <item name="android:colorPrimaryDark">@color/primaryDarkColor</item>
+        <item name="android:colorAccent">@color/secondaryLightColor</item>
+        <item name="android:colorForeground">@color/secondaryLightColor</item>
+        <item name="android:colorBackground">@color/background_material_light</item>
+        <item name="android:statusBarColor">@color/primaryDarkColor</item>
+        <item name="android:textColorSecondary">@color/secondaryLightColor</item>
+        <item name="android:textColorPrimary">@color/secondaryLightColor</item>
+    </style>
+
+    <style name="thanksgiving" parent="android:Theme.Material.Light.DarkActionBar" >
+        <item name="android:colorAccent">@color/secondaryDarkColor</item>
+        <item name="android:colorPrimaryDark">@color/primaryDarkColor</item>
+        <item name="android:colorBackground">@color/primaryLightColor</item>
+        <item name="android:colorPrimary">@color/primaryColor</item>
+        <item name="android:statusBarColor">@color/primaryDarkColor</item>
+        <item name="android:textColorPrimary">@color/primaryTextColor</item>
+        <item name="android:textColorSecondary">@color/secondaryTextColor</item>
+        <item name="android:navigationBarColor">@color/primaryColor</item>
+    </style>
+</resources>
