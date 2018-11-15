@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">devore-lab6</string>
+    <string name="action_settings">Settings</string>
+    <string name="heading">Holiday Card</string>
+    <string name="create_button">Create!</string>
+    <string name="toggle_on">text</string>
+    <string name="toggle_off">no text</string>
+    <string name="name">Name</string>
+    <string-array name="images">
+        <item>Bells</item> <item>Ornament</item> <item>Snowflakes</item>
+    </string-array>
+    <string name="radio1">Merry Christmas</string>
+    <string name="radio2">Happy Holidays</string>
+
+</resources>
