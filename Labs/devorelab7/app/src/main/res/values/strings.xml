@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Mexican Food</string>
+    <string name="heading">Mexican Food Finder</string>
+    <string name="spinner">Choose Your Experience</string>
+    <string name="button">Find Food</string>
+    <string name="webButton">Web Search</string>
+    <string name="cactus_image">cactus</string>
+    <string name="world_image">world</string>
+    <string-array name="experience">
+        <item>authentic</item>
+        <item>rooftop bar</item>
+        <item>creative</item>
+        <item>chain</item>
+        <item>chill</item>
+    </string-array>
+    <string name="suggested_mexican">This is your suggested Mexican Restaurant</string>
+</resources>
