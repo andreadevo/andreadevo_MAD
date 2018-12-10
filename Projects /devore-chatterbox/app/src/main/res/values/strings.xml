@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">chatterbox</string>
+    <string name="prompt">Pick a color!</string>
+    <string name="prompt1">Now pick a number!</string>
+    <string name="prompt2">Last time!</string>
+    <string name="buttonA">Image Button A</string>
+    <string name="buttonB">Image Button B</string>
+    <string name="buttonC">Image Button C</string>
+    <string name="buttonD">Image Button D</string>
+    <string name="buttonPlayAgain">Play Again</string>
+</resources>
