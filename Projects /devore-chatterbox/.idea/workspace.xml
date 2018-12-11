@@ -3,8 +3,14 @@
   <component name="AndroidLayouts">
     <shared>
       <config>
-        <device id="Galaxy Nexus" />
+        <device id="pixel_xl" />
         <device id="Nexus One" />
+        <device id="pixel_2" />
+        <device id="pixel" />
+        <device id="Nexus S" />
+        <device id="Nexus 5" />
+        <device id="Galaxy Nexus" />
+        <device id="Nexus 5X" />
       </config>
     </shared>
     <layouts>
@@ -59,19 +65,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="chooseFortuneActivity.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/andreadevore/chatterbox/chooseFortuneActivity.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="159" column="29" lean-forward="true" selection-start-line="159" selection-start-column="29" selection-end-line="159" selection-end-column="29" />
-              <folding>
-                <element signature="e#1209#1449#0" expanded="true" />
-                <element signature="e#1448#1449#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="tellFortuneActivity.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/andreadevore/chatterbox/tellFortuneActivity.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -87,15 +80,25 @@
       </file>
       <file leaf-file-name="activity_tell_fortune.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_tell_fortune.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
+          <provider editor-type-id="text-editor">
+            <state relative-caret-position="415">
               <caret line="30" column="46" selection-start-line="30" selection-start-column="46" selection-end-line="30" selection-end-column="46" />
               <folding>
                 <element signature="e#961#986#0" expanded="true" />
               </folding>
             </state>
           </provider>
-          <provider editor-type-id="android-designer2">
+          <provider selected="true" editor-type-id="android-designer2">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="activity_tell_fortune.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout-land/activity_tell_fortune.xml">
+          <provider editor-type-id="text-editor">
+            <state />
+          </provider>
+          <provider selected="true" editor-type-id="android-designer2">
             <state />
           </provider>
         </entry>
@@ -121,6 +124,21 @@
           <provider editor-type-id="text-editor">
             <state relative-caret-position="975">
               <caret line="65" column="43" selection-start-line="65" selection-start-column="43" selection-end-line="65" selection-end-column="43" />
+            </state>
+          </provider>
+          <provider selected="true" editor-type-id="android-designer2">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="activity_choose_fortune.xml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout-land/activity_choose_fortune.xml">
+          <provider editor-type-id="text-editor">
+            <state relative-caret-position="165">
+              <caret line="11" selection-start-line="11" selection-end-line="11" />
+              <folding>
+                <element signature="e#3350#3366#0" expanded="true" />
+              </folding>
             </state>
           </provider>
           <provider selected="true" editor-type-id="android-designer2">
@@ -2409,6 +2427,8 @@
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_tell_fortune.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/andreadevore/chatterbox/tellFortuneActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/andreadevore/chatterbox/chooseFortuneActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout-land/activity_tell_fortune.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout-land/activity_choose_fortune.xml" />
       </list>
     </option>
   </component>
@@ -2449,6 +2469,12 @@
               <item name="devore-chatterbox" type="1abcf292:AndroidViewProjectNode" />
               <item name="app" type="feadf853:AndroidModuleNode" />
               <item name="res" type="d4f16f75:AndroidResFolderNode" />
+              <item name="drawable" type="ddeffd01:AndroidResFolderTypeNode" />
+            </path>
+            <path>
+              <item name="devore-chatterbox" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="feadf853:AndroidModuleNode" />
+              <item name="res" type="d4f16f75:AndroidResFolderNode" />
               <item name="layout" type="ddeffd01:AndroidResFolderTypeNode" />
             </path>
             <path>
@@ -2456,6 +2482,12 @@
               <item name="app" type="feadf853:AndroidModuleNode" />
               <item name="res" type="d4f16f75:AndroidResFolderNode" />
               <item name="mipmap" type="ddeffd01:AndroidResFolderTypeNode" />
+            </path>
+            <path>
+              <item name="devore-chatterbox" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="feadf853:AndroidModuleNode" />
+              <item name="res" type="d4f16f75:AndroidResFolderNode" />
+              <item name="values" type="ddeffd01:AndroidResFolderTypeNode" />
             </path>
           </expand>
           <select />
@@ -2469,11 +2501,15 @@
   <component name="PropertiesComponent">
     <property name="android.sdk.path" value="$USER_HOME$/Library/Android/sdk" />
     <property name="device.picker.selection" value="Nexus_5X_API_28" />
+    <property name="last_directory_selection" value="$PROJECT_DIR$/app/src/main/res/drawable" />
     <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
   </component>
   <component name="RecentsManager">
     <key name="android.template.packageName">
       <recent name="com.andreadevore.chatterbox" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/src/main/res/drawable" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -2678,8 +2714,8 @@
       <window_info id="Captures" order="2" weight="0.25" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24959612" />
-      <window_info active="true" anchor="bottom" id="Build" order="7" visible="true" weight="0.06552707" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.30371568" />
+      <window_info anchor="bottom" id="Build" order="7" visible="true" weight="0.06552707" />
       <window_info anchor="right" id="Gradle" order="3" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
@@ -2749,16 +2785,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_choose_fortune.xml">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="975">
-          <caret line="65" column="43" selection-start-line="65" selection-start-column="43" selection-end-line="65" selection-end-column="43" />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="android-designer2">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/andreadevore/chatterbox/tellFortuneActivtiy.java">
       <provider selected="true" editor-type-id="text-editor">
         <state />
@@ -2776,17 +2802,15 @@
         <state theme-name="ChatterboxTheme" module-name="app" proportion="0.67" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_tell_fortune.xml">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/andreadevore/chatterbox/chooseFortuneActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="30" column="46" selection-start-line="30" selection-start-column="46" selection-end-line="30" selection-end-column="46" />
+        <state relative-caret-position="2280">
+          <caret line="159" column="29" lean-forward="true" selection-start-line="159" selection-start-column="29" selection-end-line="159" selection-end-column="29" />
           <folding>
-            <element signature="e#961#986#0" expanded="true" />
+            <element signature="e#1209#1449#0" expanded="true" />
+            <element signature="e#1448#1449#0" expanded="true" />
           </folding>
         </state>
-      </provider>
-      <provider editor-type-id="android-designer2">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
@@ -2810,15 +2834,48 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/andreadevore/chatterbox/chooseFortuneActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="159" column="29" lean-forward="true" selection-start-line="159" selection-start-column="29" selection-end-line="159" selection-end-column="29" />
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout-land/activity_tell_fortune.xml">
+      <provider editor-type-id="text-editor">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="android-designer2">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_tell_fortune.xml">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="415">
+          <caret line="30" column="46" selection-start-line="30" selection-start-column="46" selection-end-line="30" selection-end-column="46" />
           <folding>
-            <element signature="e#1209#1449#0" expanded="true" />
-            <element signature="e#1448#1449#0" expanded="true" />
+            <element signature="e#961#986#0" expanded="true" />
           </folding>
         </state>
+      </provider>
+      <provider selected="true" editor-type-id="android-designer2">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_choose_fortune.xml">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="975">
+          <caret line="65" column="43" selection-start-line="65" selection-start-column="43" selection-end-line="65" selection-end-column="43" />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="android-designer2">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout-land/activity_choose_fortune.xml">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
+          <folding>
+            <element signature="e#3350#3366#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="android-designer2">
+        <state />
       </provider>
     </entry>
   </component>
