@@ -59,24 +59,24 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="chooseFortuneActivity.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="chooseFortuneActivity.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/andreadevore/chatterbox/chooseFortuneActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2760">
-              <caret line="191" column="42" lean-forward="true" selection-start-line="191" selection-start-column="42" selection-end-line="191" selection-end-column="42" />
+            <state relative-caret-position="323">
+              <caret line="159" column="29" lean-forward="true" selection-start-line="159" selection-start-column="29" selection-end-line="159" selection-end-column="29" />
               <folding>
-                <element signature="e#1182#1420#0" expanded="true" />
-                <element signature="e#1419#1420#0" expanded="true" />
+                <element signature="e#1209#1449#0" expanded="true" />
+                <element signature="e#1448#1449#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="tellFortuneActivity.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="tellFortuneActivity.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/andreadevore/chatterbox/tellFortuneActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="21" column="51" selection-start-line="21" selection-start-column="51" selection-end-line="21" selection-end-column="51" />
+            <state relative-caret-position="510">
+              <caret line="42" selection-start-line="42" selection-end-line="42" />
               <folding>
                 <element signature="e#860#1000#0" expanded="true" />
                 <element signature="e#999#1000#0" expanded="true" />
@@ -2407,14 +2407,15 @@
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_choose_fortune.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/values/strings.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_tell_fortune.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/andreadevore/chatterbox/chooseFortuneActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/andreadevore/chatterbox/tellFortuneActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/andreadevore/chatterbox/chooseFortuneActivity.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" fullScreen="true">
+    <option name="y" value="23" />
     <option name="width" value="1280" />
-    <option name="height" value="800" />
+    <option name="height" value="728" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -2678,7 +2679,7 @@
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24959612" />
-      <window_info active="true" anchor="bottom" id="Build" order="7" visible="true" weight="0.26068377" />
+      <window_info active="true" anchor="bottom" id="Build" order="7" visible="true" weight="0.06552707" />
       <window_info anchor="right" id="Gradle" order="3" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
@@ -2735,8 +2736,8 @@
         <state relative-caret-position="975">
           <caret line="71" column="13" lean-forward="true" selection-start-line="71" selection-start-column="13" selection-end-line="71" selection-end-column="13" />
           <folding>
-            <element signature="e#1182#1420#0" expanded="true" />
-            <element signature="e#1419#1420#0" expanded="true" />
+            <element signature="e#1209#1449#0" expanded="true" />
+            <element signature="e#1448#1449#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -2798,24 +2799,24 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/andreadevore/chatterbox/chooseFortuneActivity.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/andreadevore/chatterbox/tellFortuneActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2760">
-          <caret line="191" column="42" lean-forward="true" selection-start-line="191" selection-start-column="42" selection-end-line="191" selection-end-column="42" />
+        <state relative-caret-position="510">
+          <caret line="42" selection-start-line="42" selection-end-line="42" />
           <folding>
-            <element signature="e#1182#1420#0" expanded="true" />
-            <element signature="e#1419#1420#0" expanded="true" />
+            <element signature="e#860#1000#0" expanded="true" />
+            <element signature="e#999#1000#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/andreadevore/chatterbox/tellFortuneActivity.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/andreadevore/chatterbox/chooseFortuneActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="21" column="51" selection-start-line="21" selection-start-column="51" selection-end-line="21" selection-end-column="51" />
+        <state relative-caret-position="323">
+          <caret line="159" column="29" lean-forward="true" selection-start-line="159" selection-start-column="29" selection-end-line="159" selection-end-column="29" />
           <folding>
-            <element signature="e#860#1000#0" expanded="true" />
-            <element signature="e#999#1000#0" expanded="true" />
+            <element signature="e#1209#1449#0" expanded="true" />
+            <element signature="e#1448#1449#0" expanded="true" />
           </folding>
         </state>
       </provider>

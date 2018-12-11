@@ -11,7 +11,6 @@ import android.widget.TextView;
 import org.w3c.dom.Text;
 
 public class tellFortuneActivity extends Activity {
-    private String fortune;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -19,7 +18,7 @@ public class tellFortuneActivity extends Activity {
         setContentView(R.layout.activity_tell_fortune);
 
         Intent intent = getIntent();
-        fortune = intent.getStringExtra("fortune");
+        String fortune = intent.getStringExtra("fortune");
 
         // update text view
         TextView messageView = findViewById(R.id.fortuneView);

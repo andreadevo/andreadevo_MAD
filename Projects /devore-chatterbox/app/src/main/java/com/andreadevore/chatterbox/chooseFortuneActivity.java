@@ -19,6 +19,17 @@ public class chooseFortuneActivity extends Activity {
     ImageButton imageButtonD;
     TextView text;
 
+    // save state when change orientation
+    @Override
+    protected void onSaveInstanceState(Bundle outState) {
+        //save current state
+        outState.putInt("countClicks", countClicks);
+        outState.putInt("fortuneCount", fortuneCount);
+
+        //always call the superclass so it can save the view hierarchy state
+        super.onSaveInstanceState(outState);
+    }
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -45,7 +56,27 @@ public class chooseFortuneActivity extends Activity {
         imageButtonB.setOnClickListener(onclick);
         imageButtonC.setOnClickListener(onclick);
         imageButtonD.setOnClickListener(onclick);
+
+        if (savedInstanceState !=null){
+            countClicks = savedInstanceState.getInt("countClicks");
+            fortuneCount = savedInstanceState.getInt("fortuneCount");
+
+
+            // reset UI based on count clicks and fortune count
+            // only reset after 1 or 2 button clicks
+            // before 1 click, nothing ha schanged
+            // after 3 clicks, the user enters a new view controller
+            if (countClicks == 1){
+                text.setText("Now pick a number!");
+                setButton();
+            }
+            else if (countClicks == 2){
+                text.setText("Last time!");
+                setButton();
+            }
+        }
     }
+
 
     private void changeScreen(View view) {
         // CLICK COLOR
@@ -69,7 +100,7 @@ public class chooseFortuneActivity extends Activity {
                 default:
                     Log.i("Choose Fortune", "None");
             }
-            // set image resource
+            // set image resource based on fortune count
             setButton();
         } else if (countClicks == 2) {
             // CLICK NUMBERS 1ST TIME
@@ -111,7 +142,7 @@ public class chooseFortuneActivity extends Activity {
                         Log.i("Choose Fortune", "None");
                 }
             }
-            // set image resource
+            // set image resource based on fortune count
             setButton();
         } else {
             // CLICK NUMBERS 2ND TIME
@@ -165,6 +196,14 @@ public class chooseFortuneActivity extends Activity {
             startActivityForResult(intent, 1);
         }
     }
+
+    // recreates UI on orientation change
+    private void reloadScreen(){
+        if (countClicks == 1){
+
+        }
+    }
+
 
     private void setButton () {
         // change image button based on modulo of fortune count
