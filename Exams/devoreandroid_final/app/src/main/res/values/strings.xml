@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">devore-android_final</string>
+    <string name="title">Build My Pizza</string>
+    <string name="placeholder">Pizza Name</string>
+    <string name="toggle_on">RED</string>
+    <string name="toggle_off">WHITE</string>
+    <string name="button">PIZZA</string>
+    <string name="crust">Crust</string>
+    <string name="radio1">Thin</string>
+    <string name="radio2">Thick</string>>
+    <string-array name="sizes2">
+        <item>small</item>
+        <item>medium</item>
+        <item>large</item>
+    </string-array>
+    <string name="gluten">Gluten-Free</string>
+    <string name="search">SEARCH</string>
+</resources>
